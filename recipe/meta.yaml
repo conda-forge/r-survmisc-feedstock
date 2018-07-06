@@ -1,4 +1,4 @@
-{% set version = '0.5.4' %}
+{% set version = "0.5.5" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,7 +12,7 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/survMisc_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/survMisc/survMisc_{{ version }}.tar.gz
-  sha256: 0431f3c919cde20c58be77f362e58ee1c2d9913405fc7a42802090d9a1dd44d4
+  sha256: 75091b08fb9125561a4d2b0800d1d615553dddeea06522963a8790ff10dddb02
 
 build:
   number: 0

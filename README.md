@@ -14,14 +14,16 @@ Summary: A collection of functions to help in the analysis of right-censored sur
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-survmisc-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-survmisc-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-survmisc-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-survmisc-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-survmisc-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-survmisc-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-survmisc-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-survmisc-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-survmisc-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-survmisc-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-survmisc-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-survmisc-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-survmisc/badges/version.svg)](https://anaconda.org/conda-forge/r-survmisc)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-survmisc/badges/downloads.svg)](https://anaconda.org/conda-forge/r-survmisc)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--survmisc-green.svg)](https://anaconda.org/conda-forge/r-survmisc) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-survmisc.svg)](https://anaconda.org/conda-forge/r-survmisc) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-survmisc.svg)](https://anaconda.org/conda-forge/r-survmisc) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-survmisc.svg)](https://anaconda.org/conda-forge/r-survmisc) |
 
 Installing r-survmisc
 =====================

@@ -1,5 +1,4 @@
-{% set version = "0.5.5" %}
-
+{% set version = '0.5.5' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,12 +9,13 @@ package:
 source:
   fn: survMisc_{{ version }}.tar.gz
   url:
-    - https://cran.r-project.org/src/contrib/survMisc_{{ version }}.tar.gz
-    - https://cran.r-project.org/src/contrib/Archive/survMisc/survMisc_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/survMisc_{{ version }}.tar.gz
+    - {{ cran_mirror }}/src/contrib/Archive/survMisc/survMisc_{{ version }}.tar.gz
   sha256: 75091b08fb9125561a4d2b0800d1d615553dddeea06522963a8790ff10dddb02
 
 build:
-  number: 0
+  merge_build_host: True  # [win]
+  number: 1
   skip: true  # [win32]
   rpaths:
     - lib/R/lib/
@@ -23,6 +23,8 @@ build:
 
 requirements:
   build:
+    - {{posix}}zip               # [win]
+  host:
     - r-base
     - r-kmsurv
     - r-data.table
@@ -33,7 +35,6 @@ requirements:
     - r-survival
     - r-xtable
     - r-zoo
-
   run:
     - r-base
     - r-kmsurv
@@ -48,7 +49,7 @@ requirements:
 
 test:
   commands:
-    - $R -e "library('survMisc')"  # [not win]
+    - $R -e "library('survMisc')"           # [not win]
     - "\"%R%\" -e \"library('survMisc')\""  # [win]
 
 about:
@@ -62,8 +63,9 @@ about:
 
 extra:
   recipe-maintainers:
-    - cbrueffer
     - johanneskoester
     - bgruening
     - daler
     - jdblischak
+    - cbrueffer
+    - dbast

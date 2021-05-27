@@ -7,7 +7,6 @@ package:
   version: {{ version|replace("-", "_") }}
 
 source:
-  fn: survMisc_{{ version }}.tar.gz
   url:
     - {{ cran_mirror }}/src/contrib/survMisc_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/survMisc/survMisc_{{ version }}.tar.gz
@@ -54,7 +53,7 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=survMisc
-  license: GPL-2
+  license: GPL-2.0-only
   summary: A collection of functions to help in the analysis of right-censored survival data.
     These extend the methods available in package:survival.
   license_family: GPL2
@@ -63,9 +62,3 @@ about:
 extra:
   recipe-maintainers:
     - conda-forge/r
-    - johanneskoester
-    - bgruening
-    - daler
-    - jdblischak
-    - cbrueffer
-    - dbast

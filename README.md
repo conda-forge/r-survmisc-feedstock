@@ -1,11 +1,11 @@
-About r-survmisc
-================
+About r-survmisc-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-survmisc-feedstock/blob/main/LICENSE.txt)
 
 Home: https://CRAN.R-project.org/package=survMisc
 
 Package license: GPL-2.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-survmisc-feedstock/blob/main/LICENSE.txt)
 
 Summary: A collection of functions to help in the analysis of right-censored survival data. These extend the methods available in package:survival.
 
